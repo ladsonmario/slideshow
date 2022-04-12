@@ -1,0 +1,65 @@
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #666666;
+}
+
+.slider {
+    flex: 1;   
+    overflow: hidden; /*para corta qualquer coisa que transbordar*/
+}
+
+.slider--area {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s; /*para da um efeito ao passar slider*/    
+}
+
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider--item:nth-child(1) {
+    background-image: url('../images/1.webp');
+}
+.slider--item:nth-child(2) {
+    background-image: url('../images/2.jpg');
+}
+.slider--item:nth-child(3) {
+    background-image: url('../images/3.jpg');
+}
+.slider--item:nth-child(4) {
+    background-image: url('../images/4.jpg');
+}
+.slider--item:nth-child(5) {
+    background-image: url('../images/5.jpg');
+}
+
+.slider--controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.slider--control {    
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #333333;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+.slider--control:hover {
+    box-shadow: 0px 0px 10px #dddddd;
+}
